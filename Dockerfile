@@ -4,7 +4,8 @@ RUN . /etc/os-release && \
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F23C5A6CF475977595C89F51BA6932366A755776 && \
     apt-get update && \
     apt-get install -y \
-        tox \
+        python3-pip \
+        \
         python2.3 \
         python2.4 \
         python2.5 \
@@ -18,4 +19,5 @@ RUN . /etc/os-release && \
         python3.6 \
         python3.7 \
     && \
+    pip3 install tox && \
     rm -rf /var/cache/apt/lists
