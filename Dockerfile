@@ -1,5 +1,7 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 RUN . /etc/os-release && \
+    apt-get update && \
+    apt-get install -y gnupg && \
     echo "deb http://ppa.launchpad.net/deadsnakes/ppa/ubuntu ${UBUNTU_CODENAME} main" > /etc/apt/sources.list.d/deadsnakes.list && \
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F23C5A6CF475977595C89F51BA6932366A755776 && \
     apt-get update && \
@@ -18,6 +20,8 @@ RUN . /etc/os-release && \
         python3.5 \
         python3.6 \
         python3.7 \
+        python3.8 \
     && \
     pip3 install tox && \
+    apt-get --purge autoremove -y gnupg && \
     rm -rf /var/cache/apt/lists
