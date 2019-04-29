@@ -27,14 +27,18 @@ RUN . /etc/os-release && \
         python3.3-dev \
         python3.4 \
         python3.4-dev \
+        python3.4-venv \
         python3.5 \
         python3.5-dev \
+        python3.5-venv \
         python3.6 \
         python3.6-dev \
+        python3.6-venv \
         python3.7 \
         python3.7-dev \
+        python3.7-venv \
         python3.8 \
-        python3.8-dev \
+        python3.8-venv \
     && \
     pip3 install tox && \
     apt-get --purge autoremove -y gnupg && \
