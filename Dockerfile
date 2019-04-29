@@ -40,6 +40,6 @@ RUN . /etc/os-release && \
         python3.8 \
         python3.8-venv \
     && \
-    pip3 install tox && \
+    pip3 install tox virtualenv && \
     apt-get --purge autoremove -y gnupg && \
     rm -rf /var/cache/apt/lists
