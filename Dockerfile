@@ -6,6 +6,8 @@ RUN . /etc/os-release && \
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F23C5A6CF475977595C89F51BA6932366A755776 && \
     apt-get update && \
     apt-get install -y \
+        git \
+        \
         python-pip \
         python3-pip \
         \
@@ -17,4 +19,9 @@ RUN . /etc/os-release && \
     && \
     pip3 install tox virtualenv && \
     apt-get --purge autoremove -y gnupg && \
-    rm -rf /var/cache/apt/lists
+    rm -rf /var/cache/apt/lists && \
+    useradd -rm -d /home/app -s /bin/bash -g root -G sudo -u 1000 app
+
+USER app
+
+WORKDIR /app
