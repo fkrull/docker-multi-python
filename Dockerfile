@@ -15,7 +15,6 @@ RUN . /etc/os-release && \
         python3.? \
         python3.?-dev \
         python3.?-venv \
-        python3.?-distutils \
     && \
     pip3 install tox virtualenv && \
     apt-get --purge autoremove -y gnupg && \
