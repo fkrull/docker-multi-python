@@ -18,5 +18,6 @@ The image is based on Ubuntu 18.04. Python packages come from [the Deadsnakes PP
 * Python 3.6
 * Python 3.7
 * Python 3.8
+* Python 3.9
 
-This includes the header packages (`pythonx.y-dev`) and venv where applicable. In addition, tox and virtualenv are pre-installed.
+This includes the header packages (`pythonx.y-dev`), venv, and distutils where applicable. In addition, tox and virtualenv are pre-installed.

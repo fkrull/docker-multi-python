@@ -8,12 +8,14 @@ RUN . /etc/os-release && \
     apt-get install -y \
         python-pip \
         python3-pip \
+        python3-distutils \
         \
         python2.? \
         python2.?-dev \
         python3.? \
         python3.?-dev \
         python3.?-venv \
+        python3.?-distutils \
     && \
     pip3 install tox virtualenv && \
     apt-get --purge autoremove -y gnupg && \
