@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM buildpack-deps:bionic
 RUN . /etc/os-release && \
     apt-get update && \
     apt-get install -y gnupg && \
