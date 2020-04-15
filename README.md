@@ -2,8 +2,12 @@
 
 This is a Docker image that has many different Python versions pre-installed. It also comes with [tox](https://tox.readthedocs.io) so you can easily test your code on several different Python versions.
 
+## Tags
+
+* [`bionic`, `latest`](https://github.com/fkrull/docker-multi-python/blob/master/Dockerfile.bionic)
+
 ## Details
-The image is based on the [buildpack-deps image](https://hub.docker.com/_/buildpack-deps/). It is currently using Ubuntu 18.04. Python packages come from [the Deadsnakes PPA](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa). The following Python runtimes and their header packages are installed:
+The image is based on the [buildpack-deps image](https://hub.docker.com/_/buildpack-deps/). Python packages come from [the Deadsnakes PPA](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa). The following Python runtimes and their header packages are installed:
 
 * Python 2.3
 * Python 2.4

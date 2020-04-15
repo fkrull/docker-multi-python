@@ -1,0 +1,3 @@
+FROM buildpack-deps:bionic
+COPY setup.sh /
+RUN bash setup.sh && rm /setup.sh
