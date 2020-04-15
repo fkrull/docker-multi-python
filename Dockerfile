@@ -25,3 +25,5 @@ RUN . /etc/os-release && \
     && \
     apt-get --purge autoremove -y gnupg && \
     rm -rf /var/cache/apt/lists
+
+RUN dpkg-query --show python2.? python3.? > /versions
