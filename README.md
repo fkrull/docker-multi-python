@@ -20,4 +20,8 @@ The image is based on the [buildpack-deps image](https://hub.docker.com/_/buildp
 * Python 3.8
 * Python 3.9
 
-This includes the header packages (`pythonx.y-dev`), venv, and distutils where applicable. In addition, tox and virtualenv are pre-installed.
+The following additional Python development tools are installed:
+
+* [flit](https://flit.readthedocs.io/)
+* [tox](https://tox.readthedocs.io)
+* [virtualenv](https://virtualenv.pypa.io/)

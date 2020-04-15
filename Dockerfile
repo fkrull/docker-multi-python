@@ -7,8 +7,10 @@ RUN . /etc/os-release && \
     apt-get update && \
     apt-get install -y \
         python-pip \
+        python-setuptools \
         python3-pip \
         python3-distutils \
+        python3-setuptools \
         \
         python2.? \
         python2.?-dev \
@@ -16,6 +18,10 @@ RUN . /etc/os-release && \
         python3.?-dev \
         python3.?-venv \
     && \
-    pip3 install tox virtualenv && \
+    pip3 install \
+        flit \
+        tox \
+        virtualenv \
+    && \
     apt-get --purge autoremove -y gnupg && \
     rm -rf /var/cache/apt/lists
