@@ -10,8 +10,6 @@ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F23C5A6CF475977595C89F5
 
 apt-get update
 apt-get install -y \
-    python-pip \
-    python-setuptools \
     python3-pip \
     python3-distutils \
     python3-setuptools \
