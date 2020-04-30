@@ -1,13 +1,25 @@
 # Docker Image With Many Python Versions
 
-This is a Docker image that has many different Python versions pre-installed. It also comes with [tox](https://tox.readthedocs.io) so you can easily test your code on several different Python versions.
+This is a Docker image that has many different Python versions pre-installed. The image is based on the [buildpack-deps image](https://hub.docker.com/_/buildpack-deps/). Python packages come from [the Deadsnakes PPA](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa).
+
+The following additional Python development tools are installed:
+
+* [flit](https://flit.readthedocs.io/)
+* [tox](https://tox.readthedocs.io)
+* [virtualenv](https://virtualenv.pypa.io/)
 
 ## Tags
 
-* [`bionic`, `latest`](https://github.com/fkrull/docker-multi-python/blob/master/Dockerfile.bionic)
+### [`focal`, `latest`](https://github.com/fkrull/docker-multi-python/blob/master/Dockerfile.focal)
 
-## Details
-The image is based on the [buildpack-deps image](https://hub.docker.com/_/buildpack-deps/). Python packages come from [the Deadsnakes PPA](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa). The following Python runtimes and their header packages are installed:
+Contains:
+
+* Python 2.7
+* Python 3.5+
+
+### [`bionic`](https://github.com/fkrull/docker-multi-python/blob/master/Dockerfile.bionic)
+
+Contains:
 
 * Python 2.3
 * Python 2.4
@@ -23,9 +35,4 @@ The image is based on the [buildpack-deps image](https://hub.docker.com/_/buildp
 * Python 3.7
 * Python 3.8
 * Python 3.9
-
-The following additional Python development tools are installed:
-
-* [flit](https://flit.readthedocs.io/)
-* [tox](https://tox.readthedocs.io)
-* [virtualenv](https://virtualenv.pypa.io/)
+* `pip` for Python 2.7
