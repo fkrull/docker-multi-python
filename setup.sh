@@ -33,4 +33,4 @@ pip3 install \
 apt-get --purge autoremove -y gnupg
 rm -rf /var/cache/apt/lists
 
-dpkg-query --show python2.? python3.? > /versions
+dpkg-query --show python2.? python3.? python3.?? > /versions
