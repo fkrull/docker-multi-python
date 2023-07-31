@@ -1,3 +1,6 @@
+# DEPRECATED/REMOVED
+This repository is not being updated any more. The image was removed from Docker Hub as well.
+
 # Docker Image With Many Python Versions
 
 This is a Docker image that has many different Python versions pre-installed. The image is based on the [buildpack-deps image](https://hub.docker.com/_/buildpack-deps/). Python packages come from [the Deadsnakes PPA](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa).
