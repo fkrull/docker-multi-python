@@ -1,5 +1,5 @@
 # DEPRECATED/REMOVED
-This repository is not being updated any more. The image was removed from Docker Hub as well.
+This repository is not being updated any more. You can find the last version of the image in the [repository's packages](https://github.com/fkrull/docker-multi-python/pkgs/container/docker-multi-python).
 
 # Docker Image With Many Python Versions
 
